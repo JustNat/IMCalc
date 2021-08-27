@@ -70,7 +70,6 @@
                 android:inputType="numberDecimal"
                 android:paddingVertical="8dp"
                 android:textAlignment="center"
-                android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +104,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardResult"
         android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:elevation="30dp"
         app:cardBackgroundColor="@color/objectColor"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,7 +114,6 @@
         app:layout_constraintTop_toBottomOf="@+id/card_view"
         app:layout_constraintVertical_bias="0.267"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:visibility="invisible"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -127,12 +125,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:layout_gravity="center"
+            android:layout_gravity="top|center"
             android:textSize="24sp"
             android:fontFamily="@font/roboto_mono_medium"
             android:textColor="@color/white"
-            android:layout_margin="16dp"
+            android:layout_margin="45dp"
             />
+        <TextView
+            android:id="@+id/imcState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="bottom|center"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:layout_marginBottom="24dp" />
 
     </androidx.cardview.widget.CardView>
 
